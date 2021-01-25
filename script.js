@@ -22,12 +22,23 @@ function uncheck() {
   let h31 = document.createElement('h1');
   let score = (checkbox1.length - 45) / -45;
   let finalScore = ((score * 100).toFixed(2));
+  let clean = document.querySelector('.clean');
+
+  if (finalScore >= 80) {
+    clean.innerHTML = "";
+    clean.textContent = "A Level! Great Job!"
+  }
+  if (finalScore <= 65) {
+    clean.innerHTML = "";
+    clean.textContent = `F level! Brand Destroyer!`;
+  }
 
   incomplete.append(h31.textContent = "Score: " + finalScore +"%");
 
   checkbox1.forEach(a => {
     unchecked1.append(a.parentElement);
   });
+  
 }
 
 
