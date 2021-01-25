@@ -24,7 +24,7 @@ function uncheck() {
   let finalScore = ((score * 100).toFixed(2));
   let clean = document.querySelector('.clean');
 
-  if (finalScore >= 80) {
+  if (finalScore >= 90) {
     clean.innerHTML = "";
     clean.textContent = "A Level! Great Job!"
   }
