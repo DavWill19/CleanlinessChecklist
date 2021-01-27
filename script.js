@@ -30,7 +30,7 @@ function uncheck() {
   }
   if (finalScore <= 65) {
     clean.innerHTML = "";
-    clean.textContent = `F level! Brand Destroyer!`;
+    clean.textContent = `F level! We can do better than this!`;
   }
 
   incomplete.append(h31.textContent = "Score: " + finalScore +"%");
